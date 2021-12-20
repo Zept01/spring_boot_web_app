@@ -6,11 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class LoginController {
+public class testController {
 
-    @RequestMapping("/login")
-    public String loginMessage(@RequestParam String name, ModelMap model) {
-        model.put("name", name);
-        return "login";
+
+    @RequestMapping("/test")
+    public String test(@RequestParam String test, ModelMap model) {
+        model.put("test", test);
+        return "test";
     }
+
+
 }
